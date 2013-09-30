@@ -1,0 +1,6 @@
+name: R2D
+markdown: redcarpet
+pygments: true
+
+redcarpet:
+  extensions: ['hard_wrap', 'autolink']
