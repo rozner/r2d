@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>R2D: 2D Graphics in Ruby</title>
+    <meta name="description" content="R2D: 2D Graphics in Ruby">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/syntax.css" rel="stylesheet">
+    {% if page.url contains '/docs' %}
+    {% else %}
+      <link href="/css/home.css" rel="stylesheet">
+    {% endif %}
+    <script src="http://use.typekit.com/pec6iub.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+    
+    <div class="title section">
+      <div class="content">
+        <h1><a href="/">Ruby in 2D</a></h1>
+      </div>
+    </div>
+    
+    <div class="main">
+      <div class="tagline section">
+        <div class="content">
+          <p>Create 2D graphics applications in Ruby using R2D.</p>
+        </div>
+      </div>
+      
+      <div class="menu">
+        <ul>
+          <li>Introduction</li>
+          <li {% if page.url == '/docs/index.html' %}class="active"{% endif %}><a href="/docs">Overview</a></li>
+          <li>The Window</li>
+          <li {% if page.url == '/docs/window/concepts.html' %}class="active"{% endif %}><a href="/docs/window/concepts.html">Concepts</a></li>
+          <li>Drawing</li>
+          <li {% if page.url == '/docs/drawing/concepts.html' %}class="active"{% endif %}><a href="/docs/drawing/concepts.html">Concepts</a></li>
+          <li {% if page.url == '/docs/drawing/shapes.html' %}class="active"{% endif %}><a href="/docs/drawing/shapes.html">Shapes</a></li>
+          <li {% if page.url == '/docs/drawing/gradients.html' %}class="active"{% endif %}><a href="/docs/drawing/gradients.html">Gradients</a></li>
+          <li {% if page.url == '/docs/drawing/images.html' %}class="active"{% endif %}><a href="/docs/drawing/images.html">Images</a></li>
+          <li {% if page.url == '/docs/drawing/text.html' %}class="active"{% endif %}><a href="/docs/drawing/text.html">Text</a></li>
+          <li>Audio</li>
+          <li {% if page.url == '/docs/audio/sounds.html' %}class="active"{% endif %}><a href="/docs/audio/sounds.html">Sounds</a></li>
+          <li>Input</li>
+          <li {% if page.url == '/docs/input/keyboard.html' %}class="active"{% endif %}><a href="/docs/input/keyboard.html">Keyboard</a></li>
+          <li {% if page.url == '/docs/input/mouse.html' %}class="active"{% endif %}><a href="/docs/input/mouse.html">Mouse</a></li>
+          <li {% if page.url == '/docs/input/cursor.html' %}class="active"{% endif %}><a href="/docs/input/cursor.html">Cursor</a></li>
+        </ul>
+      </div>
+      
+      <div class="page section">
+        <div class="content">
+          <div class="social-container">
+            <iframe allowtransparency="true" frameborder="0" height="20" scrolling="0" src="http://ghbtns.com/github-btn.html?user=blacktm&amp;repo=r2d&amp;type=watch&amp;count=true" width="95"></iframe>
+            <iframe allowtransparency="true" frameborder="0" height="20" scrolling="0" src="http://ghbtns.com/github-btn.html?user=blacktm&amp;repo=r2d&amp;type=fork&amp;count=true" width="95"></iframe>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.ruby2d.com" data-text="Create 2D apps in Ruby.">Tweet</a>
+          </div>
+          
+          {{ content }}
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer section">
+      <div class="content">
+        <a href="http://twitter.com/blacktm" target="_blank">by @blacktm</a>
+      </div>
+    </div>
+    
+    <!-- Twitter -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    
+    <script>
+    function toggle(id) {
+      var el = document.getElementById(id);
+      if (el.style.display == 'none') {
+        el.style.display = 'block';
+      } else {
+        el.style.display = 'none';
+      }
+    }
+    </script>
+    <script src="/js/ga-r2d.js"></script>
+  </body>
+</html>
