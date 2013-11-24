@@ -1,0 +1,46 @@
+
+.home {
+  display: none;
+}
+
+.bar .content {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-family: "Proxima Nova";
+}
+
+.bar .content.home-bar {
+  display: none;
+}
+
+.main .content {
+  min-height: 650px;
+}
+
+.menu {
+  display: none;
+}
+
+article {
+  margin-bottom: 35px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dad3c8;
+}
+
+article:last-child {
+  border-bottom: none;
+}
+
+article h1 a {
+  text-decoration: none;
+}
+
+article h1 a:hover {
+  border-bottom: 1px solid rgba(90, 85, 75, 0.5);
+}
+
+article h2 {
+  color: rgba(90, 85, 75, 0.6);
+}

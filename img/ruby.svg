@@ -1,0 +1,14 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="500" height="350" viewBox="-10 -10 520 370">
+  <polygon fill="rgb(235, 65, 65)" points= "100,0 250,0 140,100"/>
+  <polygon fill="rgb(220, 45, 45)" points="400,0 250,0 360,100"/>
+  
+  <polygon fill="rgb(255, 125, 125)" points= "0,100 100,0 140,100 "/>
+  <polygon fill="rgb(240, 90, 90)" points= "140,100 250,0 360,100"/>
+  <polygon fill="rgb(235, 65, 65)" points="400,0 500,100 360,100"/>
+  
+  <polygon fill="rgb(255, 80, 80)" points= "0,100 140,100 250,350"/>
+  <polygon fill="rgb(230, 60, 60)" points= "140,100 360,100 250,350"/>
+  <polygon fill="rgb(210, 30, 30)" points= "500,100 360,100 250,350"/>
+  
+  <polygon fill="none" stroke="#fff" stroke-opacity="1" stroke-width="10" points="0,100 100,0 250,0 400,0 500,100 250,350"/>
+</svg>

@@ -1,5 +1,6 @@
 ---
-layout: main
+layout: new
+breadcrumbs: docs › window
 ---
 
 # The Window

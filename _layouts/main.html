@@ -8,10 +8,13 @@
     <link href="/css/main.css" rel="stylesheet">
     <link href="/css/syntax.css" rel="stylesheet">
     {% if page.url contains '/docs' %}
+      <link href="/css/docs.css" rel="stylesheet">
+    {% elsif page.url contains '/learn' %}
+      <link href="/css/learn.css" rel="stylesheet">
     {% else %}
       <link href="/css/home.css" rel="stylesheet">
     {% endif %}
-    <script src="http://use.typekit.com/pec6iub.js"></script>
+    <script src="//use.typekit.net/jmq1hoj.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
@@ -29,7 +32,7 @@
         </div>
       </div>
       
-      <div class="menu">
+      <div class="menu docs">
         <ul>
           <li>Introduction</li>
           <li {% if page.url == '/docs/index.html' %}class="active"{% endif %}><a href="/docs">Overview</a></li>
@@ -38,15 +41,46 @@
           <li>Drawing</li>
           <li {% if page.url == '/docs/drawing/concepts.html' %}class="active"{% endif %}><a href="/docs/drawing/concepts.html">Concepts</a></li>
           <li {% if page.url == '/docs/drawing/shapes.html' %}class="active"{% endif %}><a href="/docs/drawing/shapes.html">Shapes</a></li>
-          <li {% if page.url == '/docs/drawing/gradients.html' %}class="active"{% endif %}><a href="/docs/drawing/gradients.html">Gradients</a></li>
-          <li {% if page.url == '/docs/drawing/images.html' %}class="active"{% endif %}><a href="/docs/drawing/images.html">Images</a></li>
-          <li {% if page.url == '/docs/drawing/text.html' %}class="active"{% endif %}><a href="/docs/drawing/text.html">Text</a></li>
-          <li>Audio</li>
-          <li {% if page.url == '/docs/audio/sounds.html' %}class="active"{% endif %}><a href="/docs/audio/sounds.html">Sounds</a></li>
+          <!-- <li {% if page.url == '/docs/drawing/gradients.html' %}class="active"{% endif %}><a href="/docs/drawing/gradients.html">Gradients</a></li> -->
+          <!-- <li {% if page.url == '/docs/drawing/images.html' %}class="active"{% endif %}><a href="/docs/drawing/images.html">Images</a></li> -->
+          <!-- <li {% if page.url == '/docs/drawing/text.html' %}class="active"{% endif %}><a href="/docs/drawing/text.html">Text</a></li> -->
+          <!-- <li>Audio</li> -->
+          <!-- <li {% if page.url == '/docs/audio/sounds.html' %}class="active"{% endif %}><a href="/docs/audio/sounds.html">Sounds</a></li> -->
           <li>Input</li>
           <li {% if page.url == '/docs/input/keyboard.html' %}class="active"{% endif %}><a href="/docs/input/keyboard.html">Keyboard</a></li>
           <li {% if page.url == '/docs/input/mouse.html' %}class="active"{% endif %}><a href="/docs/input/mouse.html">Mouse</a></li>
           <li {% if page.url == '/docs/input/cursor.html' %}class="active"{% endif %}><a href="/docs/input/cursor.html">Cursor</a></li>
+        </ul>
+      </div>
+      
+      <div class="menu learn">
+        <ul>
+          <li>Getting Started</li>
+          <li><a href="/learn">Introduction</a></li>
+          <li><a href="/learn">Installing Ruby</a></li>
+          <li><a href="/learn">Programs</a></li>
+          <li>Basics</li>
+          <li><a href="/learn">Program Flow</a></li>
+          <li><a href="/learn">Keywords</a></li>
+          <li><a href="/learn">Data Types</a></li>
+          <li><a href="/learn">Variables</a></li>
+          <li><a href="/learn">Expressions</a></li>
+          <li><a href="/learn">Comparisons</a></li>
+          <li><a href="/learn">Comments</a></li>
+          <li>Conditionals</li>
+          <li><a href="/learn">If / Else</a></li>
+          <li><a href="/learn">Case / When</a></li>
+          <li><a href="/learn">Loops</a></li>
+          <li>Objects</li>
+          <li><a href="/learn">Methods</a></li>
+          <li><a href="/learn">Instances</a></li>
+          <li><a href="/learn">Classes</a></li>
+          <li><a href="/learn">Modules</a></li>
+          <li>Data Structures</li>
+          <li><a href="/learn">Arrays</a></li>
+          <li><a href="/learn">Hashes</a></li>
+          <li>Blocks and Procs</li>
+          <li>Errors</li>
         </ul>
       </div>
       

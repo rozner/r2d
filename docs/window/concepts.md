@@ -1,5 +1,6 @@
 ---
-layout: main
+layout: new
+breadcrumbs: docs › window
 ---
 
 # The Window
@@ -11,21 +12,30 @@ R2D will create and manage window instances for you. Windows are created using `
 Attributes change the appearance and behavior of the window. These are applied before drawing is done.
 
 ```ruby
-                     # Defaults:
-title: "My App"      #  "R2D"
-width: 400           #  640
-height: 300          #  480
-cursor: false        #  `true`
-background: "white"  #  "black"
+                  # Defaults:
+title: "My App"   #  "R2D"
+width: 400        #  640
+height: 300       #  480
 ```
 
 Example:
 
 ```ruby
-window = R2D::Window.new(title: "My App", width: 300, height: 200, cursor: false)
+window = R2D::Window.new(title: "My App", width: 300, height: 200)
 ```
 
-## <a href="/docs/#warning"><span class="warning"></span></a> Clearing the Window
+## Adding and Removing Objects
+
+Shapes can be added to the window. Use the `add` and `remove` methods to accomplish this.
+
+```ruby
+s = R2D::Square.new
+
+window.add(s)
+window.remove(s)
+```
+
+## Clearing the Window
 
 To remove all objects from the window, use:
 
@@ -35,9 +45,9 @@ window.clear
 
 Note this does not delete the objects themselves – references remain intact. This is equivalent to calling `window.remove(object)`.
 
-# <a href="/docs/#warning"><span class="warning"></span></a> The Update Loop
+## The Update Loop
 
-Do something each time the graphic environment is updated (60 times / second).
+Do something each time the graphic environment is updated (60 times per second).
 
 ```ruby
 window.update do
@@ -45,6 +55,7 @@ window.update do
 end
 ```
 
+<!-- 
 Examples:
 
 ```ruby
@@ -54,3 +65,4 @@ window.update do
   end
 end
 ```
+-->

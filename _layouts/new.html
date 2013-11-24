@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="R2D: 2D Graphics in Ruby">
+  <link href="/css/new-main.css" rel="stylesheet">
+  {% if page.url contains '/docs' %}
+    <link href="/css/new-docs.css" rel="stylesheet">
+  {% elsif page.url contains '/news' %}
+    <link href="/css/new-news.css" rel="stylesheet">
+  {% else %}
+    <link href="/css/new-home.css" rel="stylesheet">
+  {% endif %}
+  <link href="/css/syntax.css" rel="stylesheet">
+</head>
+<body>
+  
+  {% include preview_warning.html %}
+  
+  <div class="section header">
+    <div class="content">
+      <ul>
+        <li class="home-link"><a href="/"><img src="/img/ruby.svg"></a></li>
+        <li><a href="/docs">DOCUMENTATION</a></li>
+        <li><a href="/news">NEWS</a></li>
+        <li><a href="https://github.com/blacktm/r2d">GITHUB</a></li>
+        
+        <li class="social" style="float: right; margin-right: 0">
+          <iframe allowtransparency="true" frameborder="0" height="20" scrolling="0" src="http://ghbtns.com/github-btn.html?user=blacktm&amp;repo=r2d&amp;type=watch&amp;count=true" width="95"></iframe>
+          <iframe allowtransparency="true" frameborder="0" height="20" scrolling="0" src="http://ghbtns.com/github-btn.html?user=blacktm&amp;repo=r2d&amp;type=fork&amp;count=true" width="95"></iframe>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.ruby2d.com" data-text="Create 2D apps in Ruby.">Tweet</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+  
+  <div class="section home">
+    <div class="content">
+      <img src="/img/ruby.svg">
+      <h1>Ruby in 2D</h1>
+      <h2>A gem for 2D graphics in Ruby.</h2>
+    </div>
+  </div>
+  
+  <div class="section bar">
+    <div class="content home-bar">$ gem install r2d</div>
+    <div class="content breadcrumbs">{{ page.breadcrumbs }}</div>
+  </div>
+  
+  <div class="section main">
+    <div class="content">
+      
+      <div class="menu docs">
+        <ul>
+          <li>Introduction</li>
+          <li {% if page.url == '/docs/index.html' %}class="active"{% endif %}><a href="/docs">Overview</a></li>
+          <li>The Window</li>
+          <li {% if page.url == '/docs/window/concepts.html' %}class="active"{% endif %}><a href="/docs/window/concepts.html">Concepts</a></li>
+          <li>Drawing</li>
+          <li {% if page.url == '/docs/drawing/concepts.html' %}class="active"{% endif %}><a href="/docs/drawing/concepts.html">Concepts</a></li>
+          <li {% if page.url == '/docs/drawing/shapes.html' %}class="active"{% endif %}><a href="/docs/drawing/shapes.html">Shapes</a></li>
+          <!-- <li {% if page.url == '/docs/drawing/gradients.html' %}class="active"{% endif %}><a href="/docs/drawing/gradients.html">Gradients</a></li> -->
+          <!-- <li {% if page.url == '/docs/drawing/images.html' %}class="active"{% endif %}><a href="/docs/drawing/images.html">Images</a></li> -->
+          <!-- <li {% if page.url == '/docs/drawing/text.html' %}class="active"{% endif %}><a href="/docs/drawing/text.html">Text</a></li> -->
+          <!-- <li>Audio</li> -->
+          <!-- <li {% if page.url == '/docs/audio/sounds.html' %}class="active"{% endif %}><a href="/docs/audio/sounds.html">Sounds</a></li> -->
+          <li>Input</li>
+          <li {% if page.url == '/docs/input/keyboard.html' %}class="active"{% endif %}><a href="/docs/input/keyboard.html">Keyboard</a></li>
+          <li {% if page.url == '/docs/input/mouse.html' %}class="active"{% endif %}><a href="/docs/input/mouse.html">Mouse</a></li>
+          <li {% if page.url == '/docs/input/cursor.html' %}class="active"{% endif %}><a href="/docs/input/cursor.html">Cursor</a></li>
+          <li>Meta</li>
+          <li><a href="/docs/history.html">History</a></li>
+        </ul>
+      </div>
+      
+      <div class="main-content">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+  
+  <div class="section footer">
+    <div class="content">
+      <a href="https://twitter.com/blacktm">by @blacktm</a>
+    </div>
+  </div>
+  
+  <!-- Twitter -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  
+</body>
+</html>

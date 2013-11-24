@@ -16,7 +16,8 @@ video {
 
 body {
   font: 18px "proxima-nova", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #d91828;
+  /*background: #d91828;*/
+  background: rgb(240, 50, 30);
 }
 
 code {
@@ -37,11 +38,13 @@ pre code {
 
 .warning {
   position: relative;
-  top: 5px;
+  top: -5px;
   width: 30px;
   height: 30px;
   background: url(/img/warning.svg);
-  display: inline-block;
+  /*display: inline-block;*/
+  float: left;
+  margin-right: 5px;
 }
 
 .social-container {
@@ -77,7 +80,7 @@ pre code {
 
 .title h1 a {
   color: #ffffcc;
-  text-shadow: 5px 5px 0 #ae0000;
+  text-shadow: 5px 5px 0 rgb(180, 40, 20);
   text-decoration: none;
 }
 

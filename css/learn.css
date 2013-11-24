@@ -1,0 +1,15 @@
+.menu {
+  width: 150px;
+}
+
+.menu.docs {
+  display: none;
+}
+
+.page {
+  margin-left: 165px;
+}
+
+.page .content {
+  min-height: 800px;
+}

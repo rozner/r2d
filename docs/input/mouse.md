@@ -1,8 +1,9 @@
 ---
-layout: main
+layout: new
+breadcrumbs: docs › input › mouse
 ---
 
-# <a href="/docs/#warning"><span class="warning"></span></a> Mouse
+# Mouse
 
 ```ruby
 window.mouse 'left' do

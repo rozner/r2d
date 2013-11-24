@@ -1,15 +1,23 @@
 ---
-layout: main
+layout: new
+breadcrumbs: docs › overview
 ---
 
 # Welcome to R2D
 
 This documentation describes how R2D works and can be used to create 2D applications in Ruby.
 
+<!-- 
 <a name="warning"></a>
 ## <span class="warning"></span> WARNING! Under Development!
 
 This gem in still under construction. Where there is an <span class="warning"></span> icon, this feature has not yet been implemented.
+-->
+
+<!-- 
+Use this for embedding in page:
+  <a href="/docs/#warning"><span class="warning"></span></a>
+-->
 
 ## Common Notation
 
@@ -29,12 +37,16 @@ Next, create a new window instance using the [Window](/docs/window/concepts.html
 window = R2D::Window.new
 ```
 
-Then, create and add shapes, images, and text to the window.
+Then, create a new shape:
 
 ```ruby
-r = R2D::Rectangle.new(0, 0, 100, 100, "blue")
+s = R2D::Square.new(0, 0, 100, "red")
+```
 
-window.add(r)
+And add the shape to the window:
+
+```ruby
+window.add(s)
 ```
 
 When ready to show the window, call the `show` method.

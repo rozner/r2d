@@ -1,5 +1,6 @@
 ---
-layout: main
+layout: new
+breadcrumbs: docs › drawing › concepts
 ---
 
 # Drawing Concepts
@@ -16,17 +17,9 @@ h = the height  (Integer)
 c = the color  (String)
 or...
 c = [r, g, b, a] (Array)
-  where values are 0 or 1 (Integer) or 0.0..1.0 (Float)
+  where values are 0.0..1.0 (Float) or 0..255 (Integer)
     r = red
     g = green
     b = blue
     a = alpha
-```
-
-Objects also have **common instance methods**:
-
-```ruby
-# Toggle the visibility of the object
-object.hide
-object.show
 ```

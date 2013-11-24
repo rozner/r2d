@@ -1,10 +1,12 @@
 ---
-layout: main
+layout: new
 ---
 
-## <span class="warning"></span> This website is still under development!
+# Welcome to R2D!
 
 R2D is a gem for creating 2D graphics applications in Ruby. Read the [documentation](/docs), or view the project on [GitHub](https://github.com/blacktm/r2d).
+
+<span class="warning"></span> Warning: This gem is under some seriously heavy development, and is not quite ready yet for public consumption.
 
 ## A Simple R2D Application
 
@@ -15,16 +17,16 @@ require 'r2d'
 window = R2D::Window.new
 
 # Create a new shape
-r = R2D::Rectangle.new(0, 0, 100, 100, "blue")
+s = R2D::Square.new(0, 0, 100, "red")
 
 # Add the shape to the window
-window.add(r)
+window.add(s)
 
 # Show the window
 window.show
 ```
 
-
+<!--
 Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
 
 ![Challenges](http://learnruby.s3.amazonaws.com/3_final.png)
@@ -53,6 +55,8 @@ Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada ma
 _Have a question? Contact me above!_
 
 No questions yet.
+-->
+
 
 <!--
 <a href="javascript:toggle('1');"></a>

@@ -1,8 +1,9 @@
 ---
-layout: main
+layout: new
+breadcrumbs: docs › input › keyboard
 ---
 
-# <a href="/docs/#warning"><span class="warning"></span></a> Keyboard Input
+# Keyboard Input
 
 To capture a single key press where `key` is any valid keyboard character `a..z`, `A..Z`, `0..9`, and strings representing arrows, alt, control, shift, etc. See all available [character strings](#character_strings).
 
