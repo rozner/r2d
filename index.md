@@ -6,7 +6,10 @@ layout: new
 
 R2D is a gem for creating 2D graphics applications in Ruby. Read the [documentation](/docs), or view the project on [GitHub](https://github.com/blacktm/r2d).
 
-<span class="warning"></span> Warning: This gem is under some seriously heavy development, and is not quite ready yet for public consumption.
+<span class="warning"></span> Warning: This gem is under some seriously heavy development and subject to change, a lot.
+
+The gem is only available locally until a public release is made.
+[View the local installation instructions ››](https://github.com/blacktm/r2d#installing)
 
 ## A Simple R2D Application
 

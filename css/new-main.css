@@ -50,7 +50,9 @@ pre code {
   font-size: 16px;
 }
 
-.section {}
+.section {
+  min-width: 650px;
+}
 
 .section .content {
   margin: 0 auto;
@@ -58,13 +60,10 @@ pre code {
   max-width: 600px;
 }
 
-.preview-warning .content {
-  padding: 5px;
-}
+.preview-warning .content {}
 
 .preview-warning {
   text-align: center;
-  padding: 5px;
   color: #fff;
   background: #fab612;
   font-size: 14px;
@@ -138,13 +137,17 @@ pre code {
 
 .bar {
   background: white;
-  color: gray;
+  color: #737373;
   border-bottom: 1px solid #bfbfbf;
   text-align: center;
   font-family: menlo;
 }
 
 .bar .content {}
+
+.bar a {
+  color: #737373;
+}
 
 .main {
   background: #f2efeb;
